@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>LiamHammett:iMode+WAP</id>
+	<version>1.0</version>
+
+	<file name="$themesdir/index.template.php">
+		<operation>
+			<search position="replace"><![CDATA[	<li><a id="button_xhtml" href="http://validator.w3.org/check/referer" target="_blank" class="new_win" title="', $txt['valid_xhtml'], '"><span>XHTML</span></a></li>
+			<li><a id="button_rss" href="', $scripturl , '?type=rss;action=.xml" class="new_win"><span>RSS</span></a></li>
+			<li class="last"><a id="button_wap2" href="', $scripturl , '?wap2" class="new_win"><span>WAP2</span></a></li>]]></search>
+			<add><![CDATA[			<li><a id="button_xhtml" href="http://validator.w3.org/check/referer" target="_blank" class="new_win" title="', $txt['valid_xhtml'], '"><span>XHTML</span></a></li>
+			<li><a "button_rss" href="', $scripturl , '?type=rss;action=.xml" class="new_win"><span>RSS</span></a></li>
+			<li><a href="', $scripturl , '?wap" class="new_win"><span>WAP</span></a></li>
+			<li><a id="button_wap2" href="', $scripturl , '?wap2" class="new_win"><span>WAP2</span></a></li>
+			<li class="last"><a href="', $scripturl , '?imode" class="new_win"><span>iMode</span></a></li>]]></add>
+		</operation>
+	</file>
+</modification>

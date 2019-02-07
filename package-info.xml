@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>LiamHammett:iMode+WAP</id>
+	<name>iMode+WAP</name>
+	<version>1.0</version>
+	<type>modification</type>
+	<install for="2.0 - 2.99.99">
+		<readme parsebbc="true">readme.txt</readme>
+		<modification>smf-2.0.xml</modification>
+	</install>
+	<uninstall for="2.0 - 2.99.99">
+		<modification reverse="true">smf-2.0.xml</modification>
+	</uninstall>
+</package-info>
